@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/activity_main.xml" value="0.17755825734549138" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout-land/activity_main.xml" value="0.16313932980599646" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout-land/dummy_fragment.xml" value="1.0" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout-land/home_fragment.xml" value="0.22506082725060828" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout-land/setting_fragment.xml" value="0.22506082725060828" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/dummy_fragment.xml" value="0.1453125" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/home_fragment.xml" value="0.2" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/join_activity.xml" value="0.17" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/list.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/login_activity.xml" value="0.33" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/setting_fragment.xml" value="0.1453125" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/menu/bottom_menu.xml" value="0.28425925925925927" />
       </map>
     </option>
   </component>

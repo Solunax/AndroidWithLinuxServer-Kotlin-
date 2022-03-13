@@ -26,6 +26,7 @@ class LoginActivity :Activity() {
     override fun onDestroy() {
         super.onDestroy()
         job.cancel()
+        binding.unbind()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,6 +82,7 @@ class LoginActivity :Activity() {
 
             runOnUiThread{Toast.makeText(this@LoginActivity, "로그인 성공!", Toast.LENGTH_SHORT).show()}
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
+            intent.putExtra("id", id)
             finish()
             startActivity(intent)
         }

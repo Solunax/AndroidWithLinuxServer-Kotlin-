@@ -19,6 +19,7 @@ class JoinActivity: Activity() {
     override fun onDestroy() {
         super.onDestroy()
         job.cancel()
+        binding.unbind()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
