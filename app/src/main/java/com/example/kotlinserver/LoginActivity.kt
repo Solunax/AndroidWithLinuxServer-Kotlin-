@@ -3,7 +3,6 @@ package com.example.kotlinserver
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.room.Room
@@ -46,8 +45,8 @@ class LoginActivity :Activity() {
         job = CoroutineScope(Dispatchers.IO).launch {
             val data:User = userDAO!!.getUserData()
             try {
-                binding.loginId.setText(data.id.toString())
-                binding.loginPw.setText(data.password.toString())
+                binding.loginId.setText(data.id)
+                binding.loginPw.setText(data.password)
                 binding.saveLoginInformation.isChecked = data.autoLogin
             }catch (e:Exception){
 
