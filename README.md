@@ -10,3 +10,4 @@ My Practice Project
   
 - 2022/03/12 로그인, 회원가입 Activity 추가
 - 2022/03/13 세개의 Fragment(Dummy, Home, Setting) 추가, 이미지 업로드, 회원 목록 불러오기, 회원 정보 불러오기, ViewModel을 사용한 Fragment간 데이터 전송 등의 기능 추가
+- 2022/03/26 Room을 활용한 로그인 정보 저장 및 ID, PW 자동 입력 기능 
