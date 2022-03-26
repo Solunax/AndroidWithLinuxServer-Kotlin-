@@ -3,14 +3,21 @@ package com.example.kotlinserver
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.room.Room
 import com.example.kotlinserver.API.ApiClient
+import com.example.kotlinserver.Room.AppDataBase
+import com.example.kotlinserver.Room.User
+import com.example.kotlinserver.Room.UserDAO
 import com.example.kotlinserver.databinding.LoginActivityBinding
 import kotlinx.coroutines.*
 
 class LoginActivity :Activity() {
     private var lastTimeBackPressed : Long = 0
+    private var db : AppDataBase? = null
+    private var userDAO: UserDAO? = null
     private lateinit var binding : LoginActivityBinding
     private lateinit var job:Job
 
@@ -32,6 +39,21 @@ class LoginActivity :Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.login_activity)
+
+        db = Room.databaseBuilder(this, AppDataBase::class.java, "USER").build()
+        userDAO = db!!.userDAO()
+
+        job = CoroutineScope(Dispatchers.IO).launch {
+            val data:User = userDAO!!.getUserData()
+            try {
+                binding.loginId.setText(data.id.toString())
+                binding.loginPw.setText(data.password.toString())
+                binding.saveLoginInformation.isChecked = data.autoLogin
+            }catch (e:Exception){
+
+            }
+        }
+
 
         binding.login.setOnClickListener {
             val id:String = binding.loginId.text.toString()
@@ -82,6 +104,11 @@ class LoginActivity :Activity() {
 
             runOnUiThread{Toast.makeText(this@LoginActivity, "로그인 성공!", Toast.LENGTH_SHORT).show()}
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
+
+
+            val user = User(binding.loginId.text.toString(), binding.loginPw.text.toString(), binding.saveLoginInformation.isChecked)
+            userDAO!!.insertUserData(user)
+
             intent.putExtra("id", id)
             finish()
             startActivity(intent)
