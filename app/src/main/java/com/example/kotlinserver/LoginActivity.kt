@@ -53,7 +53,6 @@ class LoginActivity :Activity() {
             }
         }
 
-
         binding.login.setOnClickListener {
             val id:String = binding.loginId.text.toString()
             val pw:String = binding.loginPw.text.toString()

@@ -8,12 +8,14 @@
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout-land/home_fragment.xml" value="0.22506082725060828" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout-land/setting_fragment.xml" value="0.22506082725060828" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/delete_dialog.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/dummy_fragment.xml" value="0.1453125" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/home_fragment.xml" value="0.2" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/join_activity.xml" value="0.17" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/list.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/login_activity.xml" value="0.33" />
-        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/setting_fragment.xml" value="0.1453125" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/setting_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/layout/update_user_information.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/Luna/AndroidStudioProjects/KotlinServer/app/src/main/res/menu/bottom_menu.xml" value="0.28425925925925927" />
       </map>
     </option>
